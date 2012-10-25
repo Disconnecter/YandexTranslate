@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F2DB00D163927630085D606 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2DB00C163927630085D606 /* UIKit.framework */; };
+		0F2DB00F163927630085D606 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2DB00E163927630085D606 /* Foundation.framework */; };
+		0F2DB011163927630085D606 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2DB010163927630085D606 /* CoreGraphics.framework */; };
+		0F2DB017163927630085D606 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F2DB015163927630085D606 /* InfoPlist.strings */; };
+		0F2DB019163927630085D606 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2DB018163927630085D606 /* main.m */; };
+		0F2DB01D163927630085D606 /* YTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2DB01C163927630085D606 /* YTAppDelegate.m */; };
+		0F2DB01F163927630085D606 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F2DB01E163927630085D606 /* Default.png */; };
+		0F2DB021163927630085D606 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F2DB020163927630085D606 /* Default@2x.png */; };
+		0F2DB023163927630085D606 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F2DB022163927630085D606 /* Default-568h@2x.png */; };
+		0F2DB026163927630085D606 /* YTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2DB025163927630085D606 /* YTViewController.m */; };
+		0F2DB029163927630085D606 /* YTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F2DB027163927630085D606 /* YTViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F2DB008163927630085D606 /* YandexTranslate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YandexTranslate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F2DB00C163927630085D606 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0F2DB00E163927630085D606 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0F2DB010163927630085D606 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0F2DB014163927630085D606 /* YandexTranslate-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YandexTranslate-Info.plist"; sourceTree = "<group>"; };
+		0F2DB016163927630085D606 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0F2DB018163927630085D606 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0F2DB01A163927630085D606 /* YandexTranslate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YandexTranslate-Prefix.pch"; sourceTree = "<group>"; };
+		0F2DB01B163927630085D606 /* YTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTAppDelegate.h; sourceTree = "<group>"; };
+		0F2DB01C163927630085D606 /* YTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTAppDelegate.m; sourceTree = "<group>"; };
+		0F2DB01E163927630085D606 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0F2DB020163927630085D606 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0F2DB022163927630085D606 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0F2DB024163927630085D606 /* YTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTViewController.h; sourceTree = "<group>"; };
+		0F2DB025163927630085D606 /* YTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTViewController.m; sourceTree = "<group>"; };
+		0F2DB028163927630085D606 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/YTViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F2DB005163927630085D606 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2DB00D163927630085D606 /* UIKit.framework in Frameworks */,
+				0F2DB00F163927630085D606 /* Foundation.framework in Frameworks */,
+				0F2DB011163927630085D606 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F2DAFFD163927630085D606 = {
+			isa = PBXGroup;
+			children = (
+				0F2DB012163927630085D606 /* YandexTranslate */,
+				0F2DB00B163927630085D606 /* Frameworks */,
+				0F2DB009163927630085D606 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F2DB009163927630085D606 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F2DB008163927630085D606 /* YandexTranslate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F2DB00B163927630085D606 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F2DB00C163927630085D606 /* UIKit.framework */,
+				0F2DB00E163927630085D606 /* Foundation.framework */,
+				0F2DB010163927630085D606 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F2DB012163927630085D606 /* YandexTranslate */ = {
+			isa = PBXGroup;
+			children = (
+				0F2DB01B163927630085D606 /* YTAppDelegate.h */,
+				0F2DB01C163927630085D606 /* YTAppDelegate.m */,
+				0F2DB024163927630085D606 /* YTViewController.h */,
+				0F2DB025163927630085D606 /* YTViewController.m */,
+				0F2DB027163927630085D606 /* YTViewController.xib */,
+				0F2DB013163927630085D606 /* Supporting Files */,
+			);
+			path = YandexTranslate;
+			sourceTree = "<group>";
+		};
+		0F2DB013163927630085D606 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F2DB014163927630085D606 /* YandexTranslate-Info.plist */,
+				0F2DB015163927630085D606 /* InfoPlist.strings */,
+				0F2DB018163927630085D606 /* main.m */,
+				0F2DB01A163927630085D606 /* YandexTranslate-Prefix.pch */,
+				0F2DB01E163927630085D606 /* Default.png */,
+				0F2DB020163927630085D606 /* Default@2x.png */,
+				0F2DB022163927630085D606 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F2DB007163927630085D606 /* YandexTranslate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F2DB02C163927630085D606 /* Build configuration list for PBXNativeTarget "YandexTranslate" */;
+			buildPhases = (
+				0F2DB004163927630085D606 /* Sources */,
+				0F2DB005163927630085D606 /* Frameworks */,
+				0F2DB006163927630085D606 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YandexTranslate;
+			productName = YandexTranslate;
+			productReference = 0F2DB008163927630085D606 /* YandexTranslate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F2DAFFF163927630085D606 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YT;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Zabolotnyy Sergey";
+			};
+			buildConfigurationList = 0F2DB002163927630085D606 /* Build configuration list for PBXProject "YandexTranslate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F2DAFFD163927630085D606;
+			productRefGroup = 0F2DB009163927630085D606 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F2DB007163927630085D606 /* YandexTranslate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F2DB006163927630085D606 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2DB017163927630085D606 /* InfoPlist.strings in Resources */,
+				0F2DB01F163927630085D606 /* Default.png in Resources */,
+				0F2DB021163927630085D606 /* Default@2x.png in Resources */,
+				0F2DB023163927630085D606 /* Default-568h@2x.png in Resources */,
+				0F2DB029163927630085D606 /* YTViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F2DB004163927630085D606 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2DB019163927630085D606 /* main.m in Sources */,
+				0F2DB01D163927630085D606 /* YTAppDelegate.m in Sources */,
+				0F2DB026163927630085D606 /* YTViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0F2DB015163927630085D606 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F2DB016163927630085D606 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0F2DB027163927630085D606 /* YTViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F2DB028163927630085D606 /* en */,
+			);
+			name = YTViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0F2DB02A163927630085D606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0F2DB02B163927630085D606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0F2DB02D163927630085D606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YandexTranslate/YandexTranslate-Prefix.pch";
+				INFOPLIST_FILE = "YandexTranslate/YandexTranslate-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0F2DB02E163927630085D606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YandexTranslate/YandexTranslate-Prefix.pch";
+				INFOPLIST_FILE = "YandexTranslate/YandexTranslate-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F2DB002163927630085D606 /* Build configuration list for PBXProject "YandexTranslate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F2DB02A163927630085D606 /* Debug */,
+				0F2DB02B163927630085D606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F2DB02C163927630085D606 /* Build configuration list for PBXNativeTarget "YandexTranslate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F2DB02D163927630085D606 /* Debug */,
+				0F2DB02E163927630085D606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F2DAFFF163927630085D606 /* Project object */;
+}
