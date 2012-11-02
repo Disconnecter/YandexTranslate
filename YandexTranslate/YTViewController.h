@@ -5,9 +5,14 @@
 //  Created by Zabolotnyy Sergey on 10/25/12.
 //  Copyright (c) 2012 Zabolotnyy Sergey. All rights reserved.
 //
+#import "YTTranslater.h"
 
-#import <UIKit/UIKit.h>
+@interface YTViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate, YTTranslaterDelegate>
 
-@interface YTViewController : UIViewController
+@property (retain, nonatomic) IBOutlet UITextView *inputTextView;
+@property (retain, nonatomic) IBOutlet UITextView *outputTextView;
+@property (retain, nonatomic) IBOutlet UITextField *fromDirection;
+@property (retain, nonatomic) IBOutlet UITextField *toDirection;
+@property (retain, nonatomic) IBOutlet UIImageView *image;
 
 @end
