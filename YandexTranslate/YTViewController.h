@@ -13,6 +13,5 @@
 @property (retain, nonatomic) IBOutlet UITextView *outputTextView;
 @property (retain, nonatomic) IBOutlet UITextField *fromDirection;
 @property (retain, nonatomic) IBOutlet UITextField *toDirection;
-@property (retain, nonatomic) IBOutlet UIImageView *image;
 
 @end

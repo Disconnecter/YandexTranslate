@@ -20,7 +20,6 @@
     [_fromDirection release];
     [_toDirection release];
 
-    [_image release];
     [super dealloc];
 }
 
@@ -33,7 +32,6 @@
     [self setFromDirection:nil];
     [self setToDirection:nil];
 
-    [self setImage:nil];
     [super viewDidUnload];
 }
 
@@ -48,26 +46,6 @@
     _toDirection.inputView = langPicker;
     
     [langPicker release];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    for (NSInteger i = 1; i <= 48; ++i)
-    {
-        NSString *url = [NSString stringWithFormat:@"http://forum.develdo.com/public/photo/0000/0000/%i.jpg",i];
-//        NSString *url = [NSString stringWithFormat:@"http://images.apple.com/euro/home/images/ipodtouch_hero.jpg"];
-        YTImageRequest *imgReq = [YTImageRequest new];
-        [imgReq imageWithURL:[NSURL URLWithString:url]
-              needSaveInCash:YES
-                     success:^(UIImage *bimg, NSError *error)
-         {
-             [self.image setImage:bimg];
-             
-             NSLog(@"%@",error);
-         }];
-        [imgReq release];
-    }
-
 }
 
 #pragma mark - Buttons actions
