@@ -1,4 +1,4 @@
-H1 Yandex Translate
+# Yandex Translate
 Implementation of Yandex Translate service
  [Read more](http://api.yandex.ru/translate/doc/dg/concepts/api-overview.xml) 
 Example
