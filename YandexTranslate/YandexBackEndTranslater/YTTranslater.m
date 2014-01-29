@@ -7,7 +7,6 @@
 //
 
 #import "YTTranslater.h"
-#import "AFNetworking.h"
 
 #define BASE_URL @"https://translate.yandex.net/api/v1.5/tr.json"
 #define API_KEY @""
@@ -20,45 +19,63 @@
 #define TR @"tr"
 
 @implementation YTTranslater
-
+{
+    NSOperationQueue* queue;
+}
 @synthesize delegate;
 
 #pragma mark - Private methods
+- (id)init
+{
+    self = [super init];
+    
+    if (self)
+    {
+        queue = [NSOperationQueue new];
+        [queue setMaxConcurrentOperationCount:2];
+    }
+    
+    return self;
+}
 
 - (void)perfomRequest:(NSURLRequest *)requestURL
   withCompletionBlock:(void (^)(id response)) completionBlock
             failBlock:(void (^)(NSError *error)) failBlock
 {
-    [AFJSONRequestOperation addAcceptableContentTypes:[NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/plain",@"text/html", nil]];
-    AFJSONRequestOperation *requestOperation =
-    [AFJSONRequestOperation JSONRequestOperationWithRequest:requestURL
-                                                    success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON)
+    [NSURLConnection sendAsynchronousRequest:requestURL queue:queue completionHandler:^(NSURLResponse *response,
+                                                                                        NSData *data,
+                                                                                        NSError *connectionError)
      {
-         NSDictionary *responseDictionary = [NSDictionary dictionaryWithDictionary:JSON];
-         
-         if (((NSString *)[responseDictionary objectForKey:@"code"]).intValue == 200)
+         if (connectionError)
          {
-             if ( completionBlock )
-                 completionBlock(responseDictionary);
-         }
-         else
-         {
-             NSError* error = [NSError errorWithDomain:@"YANDEXTranslater"
-                                                  code:((NSString *)[responseDictionary objectForKey:@"code"]).intValue
-                                              userInfo:
-                               [NSDictionary dictionaryWithObject:[responseDictionary objectForKey:@"error"]
-                                                           forKey:NSLocalizedDescriptionKey]];
              if(failBlock)
-                 failBlock(error);
+             {
+                 failBlock (connectionError);
+             }
          }
-     }
-                                                    failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON)
-     {
-         if(failBlock)
-             failBlock(error);
+         else if (completionBlock)
+         {
+             NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:data
+                                                                                options:kNilOptions
+                                                                                  error:nil];
+             
+             if (((NSString *)[responseDictionary objectForKey:@"code"]).intValue == 200)
+             {
+                 if ( completionBlock )
+                     completionBlock(responseDictionary);
+             }
+             else
+             {
+                 NSError* error = [NSError errorWithDomain:@"YANDEXTranslater"
+                                                      code:((NSString *)[responseDictionary objectForKey:@"code"]).intValue
+                                                  userInfo:
+                                   [NSDictionary dictionaryWithObject:[responseDictionary objectForKey:@"error"]
+                                                               forKey:NSLocalizedDescriptionKey]];
+                 if(failBlock)
+                     failBlock(error);
+             }
+         }
      }];
-    
-    [requestOperation start];
 }
 
 - (void)startRequestWithUrlString:(NSString *) urlString
