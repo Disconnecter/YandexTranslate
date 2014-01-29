@@ -7,10 +7,10 @@
 //
 
 #import "YTTranslater.h"
-#import "Request.h"
 #import "AFNetworking.h"
 
-#define BASE_URL @"http://translate.yandex.net/api/v1/tr.json"
+#define BASE_URL @"https://translate.yandex.net/api/v1.5/tr.json"
+#define API_KEY @""
 
 #define RU @"ru"
 #define EN @"en"
@@ -18,7 +18,6 @@
 #define UK @"uk"
 #define DE @"de"
 #define TR @"tr"
-
 
 @implementation YTTranslater
 
@@ -67,6 +66,8 @@
                     withFailBlock:(void (^)(NSError* error)) failBlock
 
 {
+    NSAssert(API_KEY.length != 0, @"get api key");
+    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&key=%@",API_KEY]];
     NSString *stringURL = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSURLRequest *requestURL = [NSURLRequest requestWithURL:[NSURL URLWithString:stringURL]];
     

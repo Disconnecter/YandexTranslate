@@ -29,7 +29,6 @@
 		0F2DB04416392D120085D606 /* tr.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F2DB03816392D120085D606 /* tr.png */; };
 		0F2DB04516392D120085D606 /* tr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F2DB03916392D120085D606 /* tr@2x.png */; };
 		0F2DB04B163934FB0085D606 /* YTTranslater.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2DB04A163934FB0085D606 /* YTTranslater.m */; };
-		0F2DB04F16393CA00085D606 /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2DB04E16393CA00085D606 /* Request.m */; };
 		0F2DB07D163947AA0085D606 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2DB069163947AA0085D606 /* AFHTTPClient.m */; };
 		0F2DB07E163947AA0085D606 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2DB06B163947AA0085D606 /* AFHTTPRequestOperation.m */; };
 		0F2DB07F163947AA0085D606 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2DB06D163947AA0085D606 /* AFImageRequestOperation.m */; };
@@ -43,7 +42,6 @@
 		0F2DB08D16397B280085D606 /* uk.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F2DB08C16397B280085D606 /* uk.png */; };
 		0F2DB08F16397B2F0085D606 /* uk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F2DB08E16397B2F0085D606 /* uk@2x.png */; };
 		0F633FDC16417A0C0021CA08 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F633FDB16417A0C0021CA08 /* SystemConfiguration.framework */; };
-		0F87C29E16400EC8000ED014 /* YTImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F87C29D16400EC8000ED014 /* YTImageRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,8 +73,6 @@
 		0F2DB03916392D120085D606 /* tr@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tr@2x.png"; sourceTree = "<group>"; };
 		0F2DB049163934FB0085D606 /* YTTranslater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YTTranslater.h; path = YandexBackEndTranslater/YTTranslater.h; sourceTree = "<group>"; };
 		0F2DB04A163934FB0085D606 /* YTTranslater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YTTranslater.m; path = YandexBackEndTranslater/YTTranslater.m; sourceTree = "<group>"; };
-		0F2DB04D16393CA00085D606 /* Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
-		0F2DB04E16393CA00085D606 /* Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
 		0F2DB068163947AA0085D606 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		0F2DB069163947AA0085D606 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
 		0F2DB06A163947AA0085D606 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -101,8 +97,6 @@
 		0F2DB08C16397B280085D606 /* uk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uk.png; sourceTree = "<group>"; };
 		0F2DB08E16397B2F0085D606 /* uk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uk@2x.png"; sourceTree = "<group>"; };
 		0F633FDB16417A0C0021CA08 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		0F87C29C16400EC8000ED014 /* YTImageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YTImageRequest.h; path = YandexBackEndTranslater/YTImageRequest.h; sourceTree = "<group>"; };
-		0F87C29D16400EC8000ED014 /* YTImageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YTImageRequest.m; path = YandexBackEndTranslater/YTImageRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				0F2DB067163947AA0085D606 /* AFNetworking */,
-				0F2DB04C16393CA00085D606 /* Request */,
 				0F2DB048163934C00085D606 /* YandexTranslateBackEnd */,
 				0F2DB01B163927630085D606 /* YTAppDelegate.h */,
 				0F2DB01C163927630085D606 /* YTAppDelegate.m */,
@@ -204,20 +197,8 @@
 			children = (
 				0F2DB049163934FB0085D606 /* YTTranslater.h */,
 				0F2DB04A163934FB0085D606 /* YTTranslater.m */,
-				0F87C29C16400EC8000ED014 /* YTImageRequest.h */,
-				0F87C29D16400EC8000ED014 /* YTImageRequest.m */,
 			);
 			name = YandexTranslateBackEnd;
-			sourceTree = "<group>";
-		};
-		0F2DB04C16393CA00085D606 /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				0F2DB04D16393CA00085D606 /* Request.h */,
-				0F2DB04E16393CA00085D606 /* Request.m */,
-			);
-			name = Request;
-			path = 3rdParty/Request;
 			sourceTree = "<group>";
 		};
 		0F2DB067163947AA0085D606 /* AFNetworking */ = {
@@ -332,7 +313,6 @@
 				0F2DB01D163927630085D606 /* YTAppDelegate.m in Sources */,
 				0F2DB026163927630085D606 /* YTViewController.m in Sources */,
 				0F2DB04B163934FB0085D606 /* YTTranslater.m in Sources */,
-				0F2DB04F16393CA00085D606 /* Request.m in Sources */,
 				0F2DB07D163947AA0085D606 /* AFHTTPClient.m in Sources */,
 				0F2DB07E163947AA0085D606 /* AFHTTPRequestOperation.m in Sources */,
 				0F2DB07F163947AA0085D606 /* AFImageRequestOperation.m in Sources */,
@@ -343,7 +323,6 @@
 				0F2DB084163947AA0085D606 /* AFURLConnectionOperation.m in Sources */,
 				0F2DB085163947AA0085D606 /* AFXMLRequestOperation.m in Sources */,
 				0F2DB086163947AA0085D606 /* UIImageView+AFNetworking.m in Sources */,
-				0F87C29E16400EC8000ED014 /* YTImageRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
