@@ -3,6 +3,8 @@ Implementation of Yandex Translate service
  [Read more](http://api.yandex.ru/translate/doc/dg/concepts/api-overview.xml) 
  [Get api key](http://api.yandex.ru/key/getkey.xml)
 
+ For work define API_KEY value in YTTranslater.m file
+
 Example
 -------
  ```objectivec
@@ -11,4 +13,3 @@ Example
                                        toLang:[[YTAppDelegate translater] translateDirectionForString:_toDirection.text]];
 ```
 
-For work define API_KEY value in YTTranslater.m file
