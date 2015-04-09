@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Disconnecter/YandexTranslate.svg)](https://travis-ci.org/Disconnecter/YandexTranslate)
+[![Build Status](https://travis-ci.org/Disconnecter/YandexTranslate.svg?branch=master)](https://travis-ci.org/Disconnecter/YandexTranslate)
 # Yandex Translate
 Implementation of Yandex Translate service
  [Read more](http://api.yandex.ru/translate/doc/dg/concepts/api-overview.xml) 
