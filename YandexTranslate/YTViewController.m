@@ -7,7 +7,6 @@
 //
 
 #import "YTViewController.h"
-#import "YTImageRequest.h"
 
 @implementation YTViewController
 
